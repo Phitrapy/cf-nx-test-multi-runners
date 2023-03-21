@@ -4264,6 +4264,11 @@ ent@~2.2.0:
   resolved "https://nexus.int.rcacloud.it/repository/npm-all/ent/-/ent-2.2.0.tgz#e964219325a21d05f44466a2f686ed6ce5f5dd1d"
   integrity sha512-GHrMyVZQWvTIdDtpiEXdHZnFQKzeO09apj8Cbl4pKWy4i0Oprcq17usfDt5aO63swf0JOeMWjWQE/LzgSRuWpA==
 
+entities@4.3.0:
+  version "4.3.0"
+  resolved "https://nexus.int.rcacloud.it/repository/npm-all/entities/-/entities-4.3.0.tgz#62915f08d67353bb4eb67e3d62641a4059aec656"
+  integrity sha512-/iP1rZrSEJ0DTlPiX+jbzlA3eVkY/e8L8SozroF395fIqE3TYF/Nz7YOMAawta+vLmyJ/hkGNNPcSbMADCCXbg==
+
 entities@^2.0.0:
   version "2.2.0"
   resolved "https://nexus.int.rcacloud.it/repository/npm-all/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
@@ -6367,6 +6372,14 @@ jest-snapshot@^27.5.1:
     natural-compare "^1.4.0"
     pretty-format "^27.5.1"
     semver "^7.3.2"
+
+jest-sonar@0.2.15:
+  version "0.2.15"
+  resolved "https://nexus.int.rcacloud.it/repository/npm-all/jest-sonar/-/jest-sonar-0.2.15.tgz#7aeabc696c784a3d0b49a1175a21d4012e6e274f"
+  integrity sha512-hJSM9AIAbhTjhalduCYuOmZA+9VmNUZR+Ccm35iLQjlMS7k6NK8OLJMRJGS2mqwzd8akZmHbcyK4TkUz4ZG1Pg==
+  dependencies:
+    entities "4.3.0"
+    strip-ansi "6.0.1"
 
 jest-util@27.2.0:
   version "27.2.0"
@@ -8956,7 +8969,7 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+strip-ansi@6.0.1, strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://nexus.int.rcacloud.it/repository/npm-all/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==

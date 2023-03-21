@@ -13,7 +13,17 @@ module.exports = {
     'text',
     'text-summary'
   ],
-  coverageDirectory: '../../public/libs/lib1/lcov',
+  reporters: [
+    'default',
+    [
+      'jest-sonar',
+      {
+        outputDirectory: 'public/tests/libs/lib1',
+        outputName: 'ut_report.xml',
+      },
+    ],
+  ],
+  coverageDirectory: '../../public/coverage/libs/lib1',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
