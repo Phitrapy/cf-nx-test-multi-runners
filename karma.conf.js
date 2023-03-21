@@ -45,6 +45,10 @@ module.exports = () => {
       dir: require('path').join(__dirname, '../public/coverage'),
       reporters: [
         // les reporters sont spécifiés par les fichiers spécifiques dev et CI
+        { type: 'html', subdir: '.' },
+        { type: 'lcov', subdir: '.' },
+        { type: 'text', subdir: '.' },
+        { type: 'text-summary', subdir: '.' }
       ],
     },
     sonarQubeUnitReporter: {
