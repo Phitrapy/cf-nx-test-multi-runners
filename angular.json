@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "lib1": "libs/lib1",
+    "lib2": "libs/lib2",
     "main": "apps/main",
     "main-e2e": "apps/main-e2e"
   }

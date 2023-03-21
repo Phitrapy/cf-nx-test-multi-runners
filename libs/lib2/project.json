@@ -1,0 +1,23 @@
+{
+  "projectType": "library",
+  "root": "libs/lib2",
+  "sourceRoot": "libs/lib2/src",
+  "prefix": "cf-nx-test-multi-runners",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/lib2/src/test.ts",
+        "tsConfig": "libs/lib2/tsconfig.spec.json",
+        "karmaConfig": "libs/lib2/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/lib2/src/**/*.ts", "libs/lib2/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
