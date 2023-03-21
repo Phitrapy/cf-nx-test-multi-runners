@@ -6,7 +6,7 @@
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["public/libs/lib1"],
+      "outputs": ["public/coverage/libs/lib1", "public/tests/libs/lib1"],
       "options": {
         "jestConfig": "libs/lib1/jest.config.js",
         "passWithNoTests": false,

@@ -6,7 +6,7 @@
   "targets": {
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
-      "outputs": ["public/libs/lib2"],
+      "outputs": ["public/coverage/libs/lib2", "public/tests/libs/lib2"],
       "options": {
         "main": "libs/lib2/src/test.ts",
         "tsConfig": "libs/lib2/tsconfig.spec.json",
