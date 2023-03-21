@@ -11,7 +11,6 @@
         "jestConfig": "libs/lib1/jest.config.js",
         "passWithNoTests": false,
         "codeCoverage": true
-
       }
     },
     "lint": {

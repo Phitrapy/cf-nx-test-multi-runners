@@ -8,13 +8,9 @@ module.exports = function (config) {
   const baseConfig = getBaseKarmaConfig();
   config.set({
     ...baseConfig,
-    coverageIstanbulReporter: {
-      ...baseConfig.coverageIstanbulReporter,
-      dir: join(__dirname, '../../coverage/libs/lib2'),
-    },
     coverageReporter: {
       ...baseConfig.coverageReporter,
-      dir: require('path').join(__dirname, '../../coverage/libs/lib2'),
-    }
+      dir: join(__dirname, '../../coverage/libs/lib2'),
+    },
   });
 };
