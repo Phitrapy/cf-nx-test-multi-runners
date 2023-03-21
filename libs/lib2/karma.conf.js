@@ -10,7 +10,12 @@ module.exports = function (config) {
     ...baseConfig,
     coverageReporter: {
       ...baseConfig.coverageReporter,
-      dir: join(__dirname, '../../coverage/libs/lib2'),
+      dir: join(__dirname, '../../public/libs/lib2'),
     },
+    sonarQubeUnitReporter: {
+      ...baseConfig.sonarQubeUnitReporter,
+      outputDir: '../../public/libs/lib2',
+      testPaths: [join(__dirname, 'src')],
+    }
   });
 };

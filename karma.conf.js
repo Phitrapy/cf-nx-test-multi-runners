@@ -14,7 +14,7 @@ module.exports = () => {
       require('@angular-devkit/build-angular/plugins/karma'),
       // Added manualy
       require('karma-coverage'),
-      // require('karma-sonarqube-unit-reporter'),
+      require('karma-sonarqube-unit-reporter'),
     ],
     client: {
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
@@ -25,9 +25,7 @@ module.exports = () => {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true,
     },
-    reporters: ['progress', 'coverage',
-    //  'sonarqubeUnit'
-    ],
+    reporters: ['progress', 'sonarqubeUnit', 'coverage'],
     port: 9876,
     colors: true,
     logLevel: constants.LOG_INFO,
@@ -43,18 +41,18 @@ module.exports = () => {
     coverageReporter: {
       reporters: [
         // les reporters sont spécifiés par les fichiers spécifiques dev et CI
-        { type: 'lcov', subdir: '.' },
+        { type: 'lcov', subdir: 'lcov',  },
         { type: 'text', subdir: '.' },
         { type: 'text-summary', subdir: '.' }
       ],
     },
-    // sonarQubeUnitReporter: {
-    //   sonarQubeVersion: 'LATEST',
-    //   outputDir: './public/tests',
-    //   overrideTestDescription: true,
-    //   testPaths: ['./src'],
-    //   testFilePattern: '.spec.ts',
-    //   useBrowserName: false,
-    // },
+    sonarQubeUnitReporter: {
+      sonarQubeVersion: 'LATEST',
+      outputDir: './public/tests',
+      overrideTestDescription: true,
+      testPaths: ['./apps', './libs'],
+      testFilePattern: '.spec.ts',
+      useBrowserName: false,
+    },
   };
 };
