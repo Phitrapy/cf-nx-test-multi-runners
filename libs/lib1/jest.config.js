@@ -13,7 +13,7 @@ module.exports = {
     'text',
     'text-summary'
   ],
-  coverageDirectory: '../../coverage/libs/lib1',
+  coverageDirectory: '../../public/libs/lib1/lcov',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
