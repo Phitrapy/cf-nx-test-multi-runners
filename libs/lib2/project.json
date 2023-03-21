@@ -6,10 +6,12 @@
   "targets": {
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
+
       "options": {
         "main": "libs/lib2/src/test.ts",
         "tsConfig": "libs/lib2/tsconfig.spec.json",
-        "karmaConfig": "libs/lib2/karma.conf.js"
+        "karmaConfig": "libs/lib2/karma.conf.js",
+        "codeCoverage": true
       }
     },
     "lint": {
