@@ -41,7 +41,7 @@ module.exports = () => {
     coverageReporter: {
       reporters: [
         // les reporters sont spécifiés par les fichiers spécifiques dev et CI
-        { type: 'lcov', subdir: 'lcov',  },
+        { type: 'lcov', subdir: '.'  },
         { type: 'text', subdir: '.' },
         { type: 'text-summary', subdir: '.' }
       ],
